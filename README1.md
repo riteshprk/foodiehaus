@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://compassionate-panini-6e0d2c.netlify.app/">
-    <img src="./src/media/logo.png" alt="foodiehaus Logo" width="200" height="57">
+    <img src="./src/media/logo.PNG" alt="foodiehaus Logo" width="200" height="57">
   </a>
 
   <h3 align="center">Track, Manage & Kill Bugs Effectively</h3>
