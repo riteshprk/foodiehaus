@@ -1,7 +1,7 @@
 <br />
 <p align="center">
-  <a href="https://bugvilla.herokuapp.com">
-    <img src="./client/src/assets/images/BugVilla.png" alt="BugVilla Logo" width="200" height="57">
+  <a href="https://compassionate-panini-6e0d2c.netlify.app/">
+    <img src="./src/media/logo.png" alt="foodiehaus Logo" width="200" height="57">
   </a>
 
   <h3 align="center">Track, Manage & Kill Bugs Effectively</h3>
@@ -111,7 +111,6 @@ A quick look at the folder structure of this project.
         ├───routes
         ├───tests
         └───utils
-
 
 ## :v: Contributing
 
