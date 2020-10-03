@@ -13,7 +13,7 @@ class Business extends React.Component {
       output.push(<span className="fa fa-star"></span>);
 
     // If there is a half a star, append it
-    if (i === 0.5) output.push(<span className="fa fa-star-half"></span>);
+    if (i === 0.5) output.push(<span className="fa fa-star-half-o"></span>);
 
     return output;
   }
@@ -34,7 +34,10 @@ class Business extends React.Component {
             <p>
               {this.props.business.state}, {this.props.business.zipCode}
             </p>
-            <p>{this.props.business.phone}</p>
+            <p>
+              <span className="fa fa-phone" />
+              {this.props.business.phone}
+            </p>
           </div>
           <div className="Business-reviews">
             <h3>{this.props.business.category}</h3>
