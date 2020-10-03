@@ -1,6 +1,14 @@
 import React from "react";
 import "./SearchBar.css";
 
+function validate(term, location) {
+  // true means invalid, so our conditions got reversed
+  return {
+    term: term.length === 0,
+    location: location.length === 0,
+  };
+}
+
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
@@ -8,7 +16,12 @@ class SearchBar extends React.Component {
       term: "",
       location: "",
       sortBy: "best_match",
-      required: true,
+      term: "",
+      location: "",
+      touched: {
+        term: false,
+        location: false,
+      },
     };
 
     this.handleTermChange = this.handleTermChange.bind(this);
@@ -27,6 +40,18 @@ class SearchBar extends React.Component {
       return "active";
     }
     return "";
+  }
+
+  handleBlur = (field) => (evt) => {
+    this.setState({
+      touched: { ...this.state.touched, [field]: true },
+    });
+  };
+
+  canBeSubmitted() {
+    const errors = validate(this.state.term, this.state.location);
+    const isDisabled = Object.keys(errors).some((x) => errors[x]);
+    return !isDisabled;
   }
 
   handleSortByChange(sortByOption) {
@@ -62,30 +87,40 @@ class SearchBar extends React.Component {
     });
   }
   render() {
+    const errors = validate(this.state.term, this.state.location);
+    const isDisabled = Object.keys(errors).some((x) => errors[x]);
     return (
-      <div className="SearchBar">
-        <div className="SearchBar-sort-options">
-          <ul>{this.renderSortByOptions()}</ul>
-        </div>
+      <form onSubmit={this.handleSubmit}>
+        <div className="SearchBar">
+          <div className="SearchBar-sort-options">
+            <ul>{this.renderSortByOptions()}</ul>
+          </div>
 
-        <div className="SearchBar-fields">
-          <input
-            onChange={this.handleTermChange}
-            placeholder="Search Businesses"
-            required
-          />
-          <input
-            onChange={this.handleLocationChange}
-            placeholder="Where?"
-            required
-          />
+          <div className="SearchBar-fields" id="inputFields">
+            <input
+              onChange={this.handleTermChange}
+              placeholder="Search Businesses"
+              type="text"
+              className={errors.term ? "error" : ""}
+              onBlur={this.handleBlur("term")}
+              value={this.state.term}
+            />
+            <input
+              onChange={this.handleLocationChange}
+              placeholder="Where?"
+              type="text"
+              className={errors.location ? "error" : ""}
+              onBlur={this.handleBlur("location")}
+              value={this.state.location}
+            />
+          </div>
+          <div className="SearchBar-submit">
+            <button disabled={isDisabled} onClick={this.handleSearch}>
+              Let's Go
+            </button>
+          </div>
         </div>
-        <div className="SearchBar-submit">
-          <a onClick={this.handleSearch} href=" ">
-            Let's Go
-          </a>
-        </div>
-      </div>
+      </form>
     );
   }
 }
