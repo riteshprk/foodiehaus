@@ -10,14 +10,11 @@ class Business extends React.Component {
 
     // Append all the filled whole stars>
     for (i = rating; i >= 1; i--)
-      output.push(<span className="fa fa-star checked"></span>);
+      output.push(<span className="fa fa-star"></span>);
 
     // If there is a half a star, append it
-    if (i === 0.5) output.push(<span className="fa fa-star"></span>);
+    if (i === 0.5) output.push(<span className="fa fa-star-half"></span>);
 
-    // Fill the empty stars
-    for (i = 5 - rating; i >= 1; i--)
-      output.push(<span className="fa fa-star"></span>);
     return output;
   }
 
@@ -25,7 +22,9 @@ class Business extends React.Component {
     return (
       <div className="Business">
         <div className="image-container">
-          <img src={this.props.business.imageSrc} alt="" />
+          <a href={this.props.business.url}>
+            <img src={this.props.business.imageSrc} alt="" />
+          </a>
         </div>
         <h2>{this.props.business.name}</h2>
         <div className="Business-information">
@@ -35,6 +34,7 @@ class Business extends React.Component {
             <p>
               {this.props.business.state}, {this.props.business.zipCode}
             </p>
+            <p>{this.props.business.phone}</p>
           </div>
           <div className="Business-reviews">
             <h3>{this.props.business.category}</h3>
