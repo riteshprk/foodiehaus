@@ -25,7 +25,7 @@
 
 ## Tech Stack
 
-<img alt="React HTML5" src="./src/media/stack.PNG">
+<img alt="React HTML5" src="./src/media/stack.PNG" width="300" height="150">
 
 ## :rocket: Quick start
 
