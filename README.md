@@ -1,68 +1,109 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br />
+<p align="center">
+  <a href="https://compassionate-panini-6e0d2c.netlify.app/">
+    <img src="./src/media/logo.PNG" alt="foodiehaus Logo" width="200" height="57">
+  </a>
 
-## Available Scripts
+  <h3 align="center">Search for takeaway, restaurant, hotel and much more!!</h3>
 
-In the project directory, you can run:
+  <p align="center">
+    <img alt="Netlify" src="https://api.netlify.com/api/v1/badges/d7d0ab19-482b-4fe5-b120-57198ede1b2c/deploy-status">
+    <img alt="GitHub" src="https://img.shields.io/github/license/riteshprk/foodiehaus?style=plastic">
+    <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/reach2ritesh?style=social"/>
+  </p>
 
-### `yarn start`
+  <p align="center">
+    <a href="https://compassionate-panini-6e0d2c.netlify.app/">View Demo</a>
+    ·
+    <a href="https://github.com/riteshprk/foodiehaus/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/riteshprk/foodiehaus/issues">Request Feature</a>
+  </p>
+</p>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p align="center">An app to provide a list of restuarant, take away, hotel and muchmore according your needs.</p>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Tech Stack
 
-### `yarn test`
+<img alt="React HTML5" src="./src/media/stack.PNG">
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## :rocket: Quick start
 
-### `yarn build`
+Start developing locally.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Step 1: Clone the repo
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Fork the repository. then clone the repo locally by doing -
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+git clone https://github.com/riteshprk/foodiehaus.git
+```
 
-### `yarn eject`
+### Step 2: Install Dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+cd into the directory
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+cd foodiehaus
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+In the root folder do npm install.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```sh
+npm install
+# also in client
+cd client & npm install
+```
 
-## Learn More
+### Step 3: Setup .env
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To run the server you will also need to provide the `.env` variables
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- create a new file .env in the root
+- open [.env.EXAMPLE](./.env.EXAMPLE)
+- copy the contents and paste it to the .env with valid keys
 
-### Code Splitting
+#### And you are good to go
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```sh
+npm run develop
+```
 
-### Analyzing the Bundle Size
+## :open_file_folder: What's inside?
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+A quick look at the folder structure of this project.
 
-### Making a Progressive Web App
+    foodiehaus
+    ├─node_modules
+    ├─public
+    └─src
+    │ ├───components
+    │ ├───medis
+    │ ├───util
+    │ ├───index.css
+    │ ├───index.js
+    │ ├───serviceWorker.js
+    │ └───setupTest.js
+    │
+    │
+    ├─── LICENSE
+    ├─── package.json
+    └─── README.md
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## :v: Contributing
 
-### Advanced Configuration
+After cloning & setting up the local project you can push the changes to your github fork and make a pull request.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+> You can also run the tests locally to see if everything works fine with
 
-### Deployment
+### Pushing the changes
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+```bash
+git add .
+git commit -m "feat: added new stuff"
+git push YOUR_REPO_URL develop
+```
 
-### `yarn build` fails to minify
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Made with :heart: and React
