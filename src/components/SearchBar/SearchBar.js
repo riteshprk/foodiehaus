@@ -16,8 +16,6 @@ class SearchBar extends React.Component {
       term: "",
       location: "",
       sortBy: "best_match",
-      term: "",
-      location: "",
       touched: {
         term: false,
         location: false,
