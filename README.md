@@ -25,7 +25,7 @@
 
 ## Tech Stack
 
-<img alt="React HTML5" src="./src/media/stack.PNG" width="220" height="120">
+<img alt="React HTML5" src="./src/media/stack.PNG" width="180" height="100">
 
 ## :rocket: Quick start
 
@@ -59,7 +59,7 @@ npm install
 To run the server you will also need to provide the `.env` variables
 
 - create a new file .env in the root
-- open [.env](./.env)
+- open [.env](./.env) file
 - copy the contents and paste it to the .env with valid keys
 
 #### And you are good to go
