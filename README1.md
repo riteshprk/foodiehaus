@@ -10,7 +10,7 @@
     <img alt="Travis (.com)" src="https://img.shields.io/travis/com/anuraghazra/BugVilla" />
     <a href="https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=anuraghazra/BugVilla&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/a789dbf2fb2045afaf67727b05fbbc68"/></a>
     <img alt="GitHub" src="https://img.shields.io/github/license/anuraghazra/BugVilla" />
-    <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/anuraghazru?style=social" />
+    <img alt="GitHub" src="https://img.shields.io/github/license/riteshprk/foodiehaus?style=plastic">
     <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/reach2ritesh?style=social"/>
   </p>
 
