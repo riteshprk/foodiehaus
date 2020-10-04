@@ -8,8 +8,7 @@
 
   <p align="center">
     <img alt="Travis (.com)" src="https://img.shields.io/travis/com/anuraghazra/BugVilla" />
-    <a href="https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=anuraghazra/BugVilla&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/a789dbf2fb2045afaf67727b05fbbc68"/></a>
-    <img alt="GitHub" src="https://img.shields.io/github/license/anuraghazra/BugVilla" />
+    <img alt="Netlify" src="https://api.netlify.com/api/v1/badges/d7d0ab19-482b-4fe5-b120-57198ede1b2c/deploy-status" href="https://app.netlify.com/sites/compassionate-panini-6e0d2c/deploys">
     <img alt="GitHub" src="https://img.shields.io/github/license/riteshprk/foodiehaus?style=plastic">
     <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/reach2ritesh?style=social"/>
   </p>
