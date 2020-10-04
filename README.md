@@ -51,8 +51,7 @@ In the root folder do npm install.
 
 ```sh
 npm install
-# also in client
-cd client & npm install
+
 ```
 
 ### Step 3: Setup .env
@@ -60,7 +59,7 @@ cd client & npm install
 To run the server you will also need to provide the `.env` variables
 
 - create a new file .env in the root
-- open [.env.EXAMPLE](./.env.EXAMPLE)
+- open [.env](./.env)
 - copy the contents and paste it to the .env with valid keys
 
 #### And you are good to go
