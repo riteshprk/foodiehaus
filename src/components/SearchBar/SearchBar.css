@@ -103,7 +103,7 @@ form input.error {
 form button {
   display: block;
   margin: 0 auto;
-  width: 10%;
+  width: 8rem;
   appearance: none;
   border-radius: 5px;
   background-color: #ff9900;

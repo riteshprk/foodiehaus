@@ -4,13 +4,14 @@
     <img src="./src/media/logo.PNG" alt="foodiehaus Logo" width="200" height="57">
   </a>
 
-  <h3 align="center">Track, Manage & Kill Bugs Effectively</h3>
+  <h3 align="center">Search for takeaway, restaurant, hotel and much more</h3>
 
   <p align="center">
     <img alt="Travis (.com)" src="https://img.shields.io/travis/com/anuraghazra/BugVilla" />
     <a href="https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=anuraghazra/BugVilla&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/a789dbf2fb2045afaf67727b05fbbc68"/></a>
     <img alt="GitHub" src="https://img.shields.io/github/license/anuraghazra/BugVilla" />
     <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/anuraghazru?style=social" />
+    ![Twitter Follow](https://img.shields.io/twitter/follow/reach2ritesh?label=Follow%20%40reach2ritesh&style=social)
   </p>
 
   <p align="center">
